@@ -31,7 +31,7 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
 
-        else if(!collision.transform.GetComponent<Bullet>())
+        else if(!collision.transform.GetComponent<Bullet>() && !collision.transform.GetComponent<Crate>())
         {
             Destroy(gameObject);
         }

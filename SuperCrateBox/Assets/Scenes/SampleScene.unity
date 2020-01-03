@@ -1381,6 +1381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 394611218}
+  - component: {fileID: 394611219}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -1404,6 +1405,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &394611219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394611217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6f539464834ef40ad9f0c6f115a116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsText: {fileID: 2100880843}
 --- !u!1001 &430250866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2267,7 +2281,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 709c5df4244249b46ad7fafdc11ecccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsText: {fileID: 2100880843}
   points: 0
   spawnLines:
   - point1: {fileID: 650229224}
@@ -2286,6 +2299,7 @@ MonoBehaviour:
     point2: {fileID: 1276787956}
   cratePrefab: {fileID: 590834142806888324, guid: fa43c4a76cd6d73479f306bb3ae19b16,
     type: 3}
+  uiManager: {fileID: 394611219}
 --- !u!1 &650229224
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class CratesManager : MonoBehaviour
 {
@@ -12,17 +11,17 @@ public class CratesManager : MonoBehaviour
         public GameObject point2;
     }
 
-    public TextMeshProUGUI pointsText;
     [HideInInspector]
     public int points;
 
     public List<Line> spawnLines;
     public Crate cratePrefab;
+    public UIManager uiManager;
 
     private void Start()
     {
         points = 0;
-        pointsText.text = points.ToString();
+        uiManager.SetPointsText(points);
         CreateCrate();
     }
 
@@ -39,7 +38,7 @@ public class CratesManager : MonoBehaviour
     private void CratePickedUp()
     {
         points++;
-        pointsText.text = points.ToString();
+        uiManager.SetPointsText(points);
         CreateCrate();
     }
 
